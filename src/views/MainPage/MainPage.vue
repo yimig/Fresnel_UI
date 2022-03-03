@@ -1,20 +1,21 @@
 <template>
 <div class="w-full h-full">
-  <div class="flex flex-col h-full">
-<!--    <Comp text="Hello World!"></Comp>-->
-    <SideBar class="h-full z-10 relative"></SideBar>
-  </div>
+  <ModernTheme>
+    <Calendar></Calendar>
+  </ModernTheme>
 </div>
 </template>
 
 <script>
 import Comp from '../../components/Comp/Comp.vue'
-import SideBar from '../../components/SideBar/SideBar.vue'
+import ModernTheme from '../../components/ModernTheme/ModernTheme.vue'
+import Calendar from '../../components/Calendar/Calendar.vue'
 export default {
   name: 'MainPage',
   components: {
     Comp,
-    SideBar
+    ModernTheme,
+    Calendar
   },
   data: function () {
     return {}
