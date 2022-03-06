@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col bg-gray">
+  <div class="w-full h-full flex">
     <SideBar></SideBar>
     <slot></slot>
   </div>

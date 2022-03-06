@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Router from './router/Router.vue'
 import axios from '../axios.config.js'
 import element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
 import Mock from 'mockjs'
 var store = require('store')
 

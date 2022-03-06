@@ -68,7 +68,9 @@ module.exports = {
     },
     borderColor: () => ({
       gray: '#c4c4c4',
-      white: '#ffffff'
+      white: '#ffffff',
+      blue: '#5BA2FF',
+      aliceblue: 'aliceblue'
     }),
     fontFamily: {
       sans: ['Graphik', 'Source Han Sans', 'SimHei', 'sans-serif']

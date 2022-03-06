@@ -1,7 +1,7 @@
 <template>
 <div class="w-full h-full">
   <ModernTheme>
-    <Calendar></Calendar>
+    <Calendar class="flex-glow"></Calendar>
   </ModernTheme>
 </div>
 </template>

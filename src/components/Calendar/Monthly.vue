@@ -1,5 +1,51 @@
 <template>
-  <div>
+  <div class="flex flex-col flex-grow">
+    <div class="grid grid-cols-7 w-full">
+      <div class="title" id="week1">星期一</div>
+      <div class="title" id="week2">星期二</div>
+      <div class="title" id="week3">星期三</div>
+      <div class="title" id="week4">星期四</div>
+      <div class="title" id="week5">星期五</div>
+      <div class="title" id="week6">星期六</div>
+      <div class="title" id="week7">星期日</div>
+    </div>
+    <div class="grid grid-cols-7 flex-grow">
+      <div class="flex day" id="day1"></div>
+      <div class="flex day" id="day2"></div>
+      <div class="flex day" id="day3"></div>
+      <div class="flex day" id="day4"></div>
+      <div class="flex day" id="day5"></div>
+      <div class="flex day" id="day6"></div>
+      <div class="flex day" id="day7"></div>
+      <div class="flex day" id="day8"></div>
+      <div class="flex day" id="day9"></div>
+      <div class="flex day" id="day10"></div>
+      <div class="flex day" id="day11"></div>
+      <div class="flex day" id="day12"></div>
+      <div class="flex day" id="day13"></div>
+      <div class="flex day" id="day14"></div>
+      <div class="flex day" id="day15"></div>
+      <div class="flex day" id="day16"></div>
+      <div class="flex day" id="day17"></div>
+      <div class="flex day" id="day18"></div>
+      <div class="flex day" id="day19"></div>
+      <div class="flex day" id="day20"></div>
+      <div class="flex day" id="day21"></div>
+      <div class="flex day" id="day22"></div>
+      <div class="flex day" id="day23"></div>
+      <div class="flex day" id="day24"></div>
+      <div class="flex day" id="day25"></div>
+      <div class="flex day" id="day26"></div>
+      <div class="flex day" id="day27"></div>
+      <div class="flex day" id="day28"></div>
+      <div class="flex day" id="day29"></div>
+      <div class="flex day" id="day30"></div>
+      <div class="flex day" id="day31"></div>
+      <div class="flex day" id="day32"></div>
+      <div class="flex day" id="day33"></div>
+      <div class="flex day" id="day34"></div>
+      <div class="flex day" id="day35"></div>
+    </div>
   </div>
 </template>
 
@@ -12,5 +58,7 @@ export default {
 </script>
 
 <style scoped>
-
+.day{
+  border: 1px solid aliceblue;
+}
 </style>

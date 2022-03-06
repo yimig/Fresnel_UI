@@ -1,16 +1,15 @@
 <template>
 <div class="sidebar h-full">
-<!--  <el-menu class="h-full w-16 border-none" background-color="#5BA2FF" text-color="#ffffff" mode="vertical" :collapse="true" @select="menuOpenHandler">-->
-<!--    <div class="hidden_object text-white" :style="hiddenObjectStyle"></div>-->
-<!--    <el-menu-item>-->
-<!--      <i class="material-icons" style="color:#ffffff">settings</i>-->
-<!--    </el-menu-item>-->
-<!--  </el-menu>-->
-<!--  <StartMenu class="absolute left-16 bottom-0 bg-blue" ref="startMenu"></StartMenu>-->
-<!--  <div :class="'z-20 sideWordMask absolute '+moveSideMask">-->
-<!--    <span>September</span>-->
-<!--  </div>-->
-
+  <div class="flex h-full w-12 flex-col bg-blue flex-col-reverse relative select-none">
+    <div class="w-12 h-12 bg-blue hover:bg-denim flex justify-center items-center" @click="menuOpenHandler">
+      <i class="material-icons text-white block">settings</i>
+    </div>
+    <div :class="'z-20 sideWordMask relative h-full ' + moveSideMask">
+      <div class="">September</div>
+      <div class="bg-white text-blue w-16 text-5xl">30</div>
+    </div>
+  </div>
+  <StartMenu class="absolute left-12 bottom-0 bg-blue" ref="startMenu"></StartMenu>
 </div>
 </template>
 
