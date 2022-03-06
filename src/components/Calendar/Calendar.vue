@@ -14,30 +14,42 @@
         </el-button>
       </el-button-group>
       <el-button-group>
-        <el-button type="primary" size="mini">日</el-button>
-        <el-button type="primary" size="mini">周</el-button>
-        <el-button type="primary" size="mini">月</el-button>
-        <el-button type="primary" size="mini">年</el-button>
+        <el-button type="primary" size="mini" @click="switchCalendar(0)" :disabled="now_calendar === 0">日</el-button>
+        <el-button type="primary" size="mini" @click="switchCalendar(1)" :disabled="now_calendar === 1">周</el-button>
+        <el-button type="primary" size="mini" @click="switchCalendar(2)" :disabled="now_calendar === 2">月</el-button>
+        <el-button type="primary" size="mini" @click="switchCalendar(3)" :disabled="now_calendar === 3">年</el-button>
       </el-button-group>
     </div>
     <div class="h-0.5 bg-blue flex-none"></div>
-<!--    <Monthly></Monthly>-->
-    <Daliy></Daliy>
-    <div class="fixed bottom-4 right-4 h-12 w-12 rounded-full bg-blue flex justify-center items-center select-none hover:bg-denim shadow">
+    <Yearly v-if="now_calendar === 3"></Yearly>
+    <Monthly v-else-if="now_calendar === 2"></Monthly>
+    <Weekly v-else-if="now_calendar === 1"></Weekly>
+    <Daily v-else></Daily>
+    <div class="fixed bottom-3 right-3 h-12 w-12 rounded-full bg-blue flex justify-center items-center select-none hover:bg-denim shadow">
       <div class="material-icons text-white">add</div>
     </div>
   </div>
 </template>
 
 <script>
-import Daliy from './Daliy.vue'
+import Daily from './Daily.vue'
 import Weekly from './Weekly.vue'
 import Monthly from './Monthly.vue'
 import Yearly from './Yearly.vue'
 export default {
   name: 'Calendar',
   components: {
-    Daliy, Weekly, Monthly, Yearly
+    Daily, Weekly, Monthly, Yearly
+  },
+  data () {
+    return {
+      now_calendar: 0
+    }
+  },
+  methods: {
+    switchCalendar: function (selectedId) {
+      this.$data.now_calendar = selectedId
+    }
   }
 }
 </script>
