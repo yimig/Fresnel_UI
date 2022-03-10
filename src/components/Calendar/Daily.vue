@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-1 flex-grow pt-2 gap-1.5">
     <div class="border border-blue rounded h-full w-1/3 flex-shrink-0">
-      <div class="flex justify-between items-center bg-denim px-2">
+      <div class="flex justify-between items-center bg-blue-light px-2">
         <div class="flex flex-col">
           <div class="flex items-end">
             <div class="text-xl">张三</div>
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col bg-blue-light rounded h-full flex-grow">
+    <div class="flex flex-col bg-blue-light rounded h-full flex-grow bg-local">
       <div class="flex flex-row-reverse w-full p-4">
         <div class="h-36 w-28 bg-white flex justify-center items-center flex-shrink-0">
           <i class="material-icons text-blue">perm_identity</i>
@@ -70,19 +70,21 @@
           <div class="bg-white h-4 w-4 shadow-xl rounded" id="day30"></div>
         </div>
       </div>
+      <!--    <Doughnut :options="config"></Doughnut>-->
+      <RandomChart></RandomChart>
     </div>
-    <Doughnut :options="config"></Doughnut>
   </div>
 </template>
 
 <script>
 import Label from '../Label/Label.vue'
-import Doughnut from '../Chart/Doughnut.vue'
+// import Doughnut from '../Chart/Doughnut.vue'
+import RandomChart from '../Chart/RandomChart.vue'
 export default {
   name: 'Daily',
   components: {
     Label,
-    Doughnut
+    RandomChart
   },
   data () {
     return {

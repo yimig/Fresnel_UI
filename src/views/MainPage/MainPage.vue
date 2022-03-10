@@ -1,5 +1,5 @@
 <template>
-<div class="w-full h-full">
+<div class="w-full" id="page">
   <ModernTheme>
     <Calendar class="flex-glow"></Calendar>
   </ModernTheme>
@@ -25,4 +25,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+#page {
+  height: 500px;
+}
 </style>

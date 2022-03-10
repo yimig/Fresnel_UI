@@ -2,9 +2,10 @@
   <div class="h-full w-full flex flex-col p-4">
     <div class="w-full flex justify-between h-14 items-center flex-none">
       <div class="text-5xl">规划</div>
-      <div class="align-bottom text-2xl">
-        2021/9/30 23:23:23
-      </div>
+<!--      <div class="align-bottom text-2xl">-->
+<!--        2021/9/30 23:23:23-->
+<!--      </div>-->
+      <NeonMatrix :text="['2021/9/30 23:23:23', 'GOOD EVENING!']"></NeonMatrix>
       <el-button-group>
         <el-button type="primary" size="mini" class="material-icons text-white">
           undo
@@ -36,10 +37,11 @@ import Daily from './Daily.vue'
 import Weekly from './Weekly.vue'
 import Monthly from './Monthly.vue'
 import Yearly from './Yearly.vue'
+import NeonMatrix from '../NeonMatrix/NeonMatrix.vue'
 export default {
   name: 'Calendar',
   components: {
-    Daily, Weekly, Monthly, Yearly
+    Daily, Weekly, Monthly, Yearly, NeonMatrix
   },
   data () {
     return {
