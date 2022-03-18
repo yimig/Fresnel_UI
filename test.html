@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Test WEB</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        html,body,.content{
+        html,body {
+            margin: 0;
+            padding: 0;
             height: 100%;
             width: 100%;
             display: flex;
+        }
+        html body .content{
+            margin: 10px;
+            border: 1px solid black;
+            display: flex;
             justify-content: center;
             align-items: center;
+            flex-grow: 1;
+            gap: 20px;
+        }
+        #fixed{
+            background-color: aquamarine;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+        }
+        #n1{
+            background: aqua;
+        }
+        #n2{
+            background: azure;
+        }
+        #n3{
+            background: beige;
+        }
+        #n4{
+            background: cadetblue;
         }
     </style>
 </head>
 <body>
 <div class="content">
-    <span>test web</span>
+    <div class="fixed h-10 w-32" id="fixed"></div>
+    <div class="h-96 w-44 border" id="left">
+        <div class="h-10 w-full item" id="n1">张三</div>
+        <div class="h-10 w-full item" id="n2">李四</div>
+        <div class="h-10 w-full item" id="n3">王五</div>
+        <div class="h-10 w-full item" id="n4">赵四</div>
+    </div>
+    <div class="h-96 w-44 border" id="right"></div>
 </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+</script>
 </html>
