@@ -39,13 +39,16 @@
         #n4{
             background: cadetblue;
         }
+        .item{
+            user-select: none;
+        }
     </style>
 </head>
 <body>
 <div class="content">
     <div class="fixed h-10 w-32" id="fixed"></div>
     <div class="h-96 w-44 border" id="left">
-        <div class="h-10 w-full item" id="n1">张三</div>
+        <div class="h-10 w-full item" id="n1" draggable="true">张三</div>
         <div class="h-10 w-full item" id="n2">李四</div>
         <div class="h-10 w-full item" id="n3">王五</div>
         <div class="h-10 w-full item" id="n4">赵四</div>
@@ -54,6 +57,9 @@
 </div>
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+</script>
 <script>
 </script>
 </html>
